@@ -388,7 +388,7 @@ main {
 }
 
 /* Sidebar component styles */
-nav-sidebar {
+nav-sidebar aside {
   background: rgb(25,233,247);
   padding: 20px;
   border-radius: 25px;
@@ -429,5 +429,6 @@ nav-sidebar .asideText {
   font-size: 0.9rem;
   white-space: nowrap; /* force one line */
 }
+
 
 
