@@ -70,10 +70,13 @@ aside h2 {
    color: rgb(247, 39, 25);
 }
 
- .asideText {
-   font-size: 0.9rem;
-   font-style: italic;
- }
+.asideText {
+  font-style: italic;
+  font-size: 1rem;
+  display: inline-block; 
+  margin: 0 0 12px 0;
+}
+
 p {
    color: white;
    font-size: 1em;
@@ -382,3 +385,4 @@ main {
     flex: none;
   }
 }
+
