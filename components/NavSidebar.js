@@ -15,7 +15,7 @@ class NavSidebar extends HTMLElement {
       <aside>
         <nav>
           <ul>
-            <h2><span class="asideText">Links to My</span></h2>
+            <h2 class="asideText">Links to My</h2>
             <li><a href="index.html"><strong>Home</strong></a></li>
             <li><a href="Resume.html">Resume</a></li>
             <li><a href="Projects.html">Projects</a></li>
@@ -26,3 +26,4 @@ class NavSidebar extends HTMLElement {
   }
 }
 customElements.define("nav-sidebar", NavSidebar);
+
