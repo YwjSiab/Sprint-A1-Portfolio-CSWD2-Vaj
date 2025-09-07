@@ -3,15 +3,6 @@ class NavSidebar extends HTMLElement {
     super();
     const r = this.attachShadow({mode:"open"});
     r.innerHTML = `
-      <style>
-        aside{background:rgb(25,233,247);padding:20px;border-radius:25px}
-        nav ul{list-style:none;margin:0;padding:0}
-        nav li{margin:8px 0}
-        nav a{color:rgb(247,39,25);text-decoration:none;font-size:1.1rem}
-        nav a:hover{color:rgb(86,0,179)}
-        h2{margin:0 0 12px}
-        .asideText{font-style:italic;font-size:.9rem}
-      </style>
       <aside>
         <nav>
           <ul>
@@ -26,4 +17,5 @@ class NavSidebar extends HTMLElement {
   }
 }
 customElements.define("nav-sidebar", NavSidebar);
+
 
