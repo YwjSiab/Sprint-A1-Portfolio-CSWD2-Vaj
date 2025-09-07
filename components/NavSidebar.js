@@ -1,21 +1,22 @@
+// components/NavSidebar.js
 class NavSidebar extends HTMLElement {
-  constructor() {
-    super();
-    const r = this.attachShadow({mode:"open"});
-    r.innerHTML = `
-      <aside>
+  connectedCallback() {
+    // Light DOM (no Shadow DOM) so page CSS can style it
+    this.innerHTML = `
+      <div class="sidebar-box">
         <nav>
+          <h2> 
+            <span class="asideText">Links to My</span>
+          </h2>
           <ul>
-            <h2 class="asideText">Links to My</h2>
             <li><a href="index.html"><strong>Home</strong></a></li>
             <li><a href="Resume.html">Resume</a></li>
             <li><a href="Projects.html">Projects</a></li>
             <li><a href="Contact.html">Contact</a></li>
           </ul>
         </nav>
-      </aside>`;
+      </div>
+    `;
   }
 }
 customElements.define("nav-sidebar", NavSidebar);
-
-
