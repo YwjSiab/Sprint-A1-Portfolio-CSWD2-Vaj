@@ -392,6 +392,12 @@ nav-sidebar {
   background: rgb(25,233,247);
   padding: 20px;
   border-radius: 25px;
+
+	  /* override global aside floats/sizing */
+  float: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  display: block;
 }
 
 nav-sidebar ul {
@@ -423,4 +429,5 @@ nav-sidebar .asideText {
   font-size: 0.9rem;
   white-space: nowrap; /* force one line */
 }
+
 
