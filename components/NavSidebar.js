@@ -5,6 +5,7 @@ class NavSidebar extends HTMLElement {
     this.innerHTML = `
       <div class="sidebar-box">
         <nav>
+        <aside class="sidebar-box">
           <h2> 
             <span class="asideText">Links to My</span>
           </h2>
@@ -14,11 +15,13 @@ class NavSidebar extends HTMLElement {
             <li><a href="Projects.html">Projects</a></li>
             <li><a href="Contact.html">Contact</a></li>
           </ul>
+          </aside>
         </nav>
       </div>
     `;
   }
 }
 customElements.define("nav-sidebar", NavSidebar);
+
 
 
