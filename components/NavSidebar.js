@@ -3,6 +3,7 @@ class NavSidebar extends HTMLElement {
   connectedCallback() {
     // Light DOM (no Shadow DOM) so page CSS can style it
     this.innerHTML = `
+    <aside>
       <div class="sidebar-box">
         <nav>
           <h2> 
@@ -16,7 +17,9 @@ class NavSidebar extends HTMLElement {
           </ul>
         </nav>
       </div>
+      </aside>
     `;
   }
 }
 customElements.define("nav-sidebar", NavSidebar);
+
