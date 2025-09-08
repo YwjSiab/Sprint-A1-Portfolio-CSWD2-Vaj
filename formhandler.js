@@ -82,8 +82,14 @@ if (contactForm) {
 
             console.log('Form submitted successfully:', { name, email, message, photo});
 
-            if (formSuccess){formSuccess.innerText = 'Your message has been sent!';}
-            contactForm.reset();
+            if (formSuccess) {
+                formSuccess.innerText = 'Your message has been sent!';
+                formSuccess.style.display = 'block';
+            }
+            if (formError) {
+                formError.innerText = '';
+                formError.style.display = 'none';
+            }            contactForm.reset();
         } catch (error) {
             console.error('Error handling contact form submission:', error);
         }
@@ -381,5 +387,6 @@ const addProjectForm = () => {
         console.error('Error creating project submission form:', error);
     }
 };
+
 
 export {addProjectForm};
