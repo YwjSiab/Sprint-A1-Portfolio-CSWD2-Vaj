@@ -359,7 +359,7 @@ input#name:focus:invalid, input#zip:focus:invalid, input#phone:focus:invalid, in
 .page {
   display: flex;
   align-items: flex-start;
-  gap: 24px;              
+  gap: 40px;              
   max-width: 1200px;
   margin: 0 auto;         
   padding: 16px 24px;
@@ -373,7 +373,8 @@ nav-sidebar {
 
 main {
   flex: 1 1 auto;
-  min-width: 0;           
+  min-width: 0;
+	text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -429,6 +430,7 @@ nav-sidebar .asideText {
   font-size: 0.9rem;
   white-space: nowrap; /* force one line */
 }
+
 
 
 
